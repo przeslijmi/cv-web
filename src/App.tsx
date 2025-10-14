@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User, Code, Heart, MessageCircle, Gamepad2, Target, Phone, Mail, Linkedin, Menu, X, Moon, Sun, RefreshCw, Bug, Sparkles, Brain, Layers, Smartphone, TestTube, Blocks, Coffee, DollarSign, GraduationCap, Zap, ChevronDown, Users, TrendingUp, Star, Send } from 'lucide-react';
+import { User, Code, Heart, MessageCircle, Gamepad2, Target, Phone, Mail, Linkedin, Menu, X, Moon, Sun, RefreshCw, Bug, Sparkles, Brain, Layers, Smartphone, TestTube, Blocks, Coffee, DollarSign, GraduationCap, Zap, ChevronDown, Users, TrendingUp, Star, Send, Handshake } from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('landing');
@@ -19,68 +19,197 @@ function App() {
     switch (activeSection) {
       case 'landing':
         return (
-          <div className="min-h-[calc(100vh-200px)] flex flex-col items-center justify-center text-center px-4 py-20">
-            <div className="max-w-5xl mx-auto space-y-12">
-              <div className="space-y-6">
-                <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700">
-                  Karol Nowakowski
-                </h1>
-                <p className={`text-2xl md:text-3xl font-light ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                  Full Stack Developer & Problem Solver
-                </p>
-                <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Passionate about crafting elegant solutions with PHP, Laravel, Vue, and React.
-                  I build software that makes a difference.
-                </p>
-              </div>
+          <div>
+            <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20">
+              <div className="max-w-5xl mx-auto space-y-12">
+                <div className="space-y-6 animate-fade-in">
+                  <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700">
+                    Karol Nowakowski
+                  </h1>
+                  <p className={`text-2xl md:text-3xl font-light ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    Full Stack Developer & Problem Solver
+                  </p>
+                  <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                    Passionate about crafting elegant solutions with PHP, Laravel, Vue, and React.
+                    I build software that makes a difference.
+                  </p>
+                </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
-                  darkMode ? 'bg-gradient-to-br from-blue-900/50 to-blue-800/50 border-blue-700' : 'bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200'
-                }`}>
-                  <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>20+</div>
-                  <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Years Experience</div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto animate-fade-in-delay">
+                  <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
+                    darkMode ? 'bg-gradient-to-br from-blue-900/50 to-blue-800/50 border-blue-700' : 'bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200'
+                  }`}>
+                    <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>20+</div>
+                    <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Years Experience</div>
+                  </div>
+                  <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
+                    darkMode ? 'bg-gradient-to-br from-orange-900/50 to-amber-900/50 border-orange-700' : 'bg-gradient-to-br from-orange-50 to-amber-100 border-orange-200'
+                  }`}>
+                    <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-orange-400' : 'text-orange-600'}`}>100+</div>
+                    <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Projects Delivered</div>
+                  </div>
+                  <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
+                    darkMode ? 'bg-gradient-to-br from-cyan-900/50 to-cyan-800/50 border-cyan-700' : 'bg-gradient-to-br from-cyan-50 to-cyan-100 border-cyan-200'
+                  }`}>
+                    <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>100%</div>
+                    <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Dedication</div>
+                  </div>
+                  <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
+                    darkMode ? 'bg-gradient-to-br from-amber-900/50 to-yellow-900/50 border-amber-700' : 'bg-gradient-to-br from-amber-50 to-yellow-100 border-amber-200'
+                  }`}>
+                    <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-amber-400' : 'text-amber-600'}`}>∞</div>
+                    <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Curiosity</div>
+                  </div>
                 </div>
-                <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
-                  darkMode ? 'bg-gradient-to-br from-orange-900/50 to-amber-900/50 border-orange-700' : 'bg-gradient-to-br from-orange-50 to-amber-100 border-orange-200'
-                }`}>
-                  <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-orange-400' : 'text-orange-600'}`}>100+</div>
-                  <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Projects Delivered</div>
-                </div>
-                <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
-                  darkMode ? 'bg-gradient-to-br from-cyan-900/50 to-cyan-800/50 border-cyan-700' : 'bg-gradient-to-br from-cyan-50 to-cyan-100 border-cyan-200'
-                }`}>
-                  <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>100%</div>
-                  <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Dedication</div>
-                </div>
-                <div className={`p-6 rounded-2xl border-2 hover:scale-105 transition-transform ${
-                  darkMode ? 'bg-gradient-to-br from-amber-900/50 to-yellow-900/50 border-amber-700' : 'bg-gradient-to-br from-amber-50 to-yellow-100 border-amber-200'
-                }`}>
-                  <div className={`text-3xl font-bold mb-1 ${darkMode ? 'text-amber-400' : 'text-amber-600'}`}>∞</div>
-                  <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Curiosity</div>
-                </div>
-              </div>
 
-              <div className="grid md:grid-cols-3 gap-8 mt-16">
-                {menuItems.slice(1).map((item) => {
-                  const Icon = item.icon;
-                  return (
+                <div className="space-y-8 animate-fade-in-delay-2">
+                  <h2 className={`text-3xl font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-800'}`}>Explore My Journey</h2>
+
+                  <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <button
-                      key={item.id}
-                      onClick={() => setActiveSection(item.id)}
-                      className={`p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 ${
-                        darkMode
-                          ? 'bg-gradient-to-br from-gray-800 to-gray-700 text-white border-2 border-gray-600'
-                          : 'bg-gradient-to-br from-blue-500 to-cyan-500 text-white'
-                      }`}
+                      onClick={() => setActiveSection('outcome')}
+                      className={`p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow ${
+                        darkMode ? 'bg-gradient-to-br from-blue-900 to-blue-800' : 'bg-gradient-to-br from-blue-500 to-blue-600'
+                      } text-white`}
                     >
-                      <Icon className="w-12 h-12 mx-auto mb-4" />
-                      <h3 className="text-xl font-bold">{item.label}</h3>
+                      <div className="flex items-center justify-center mb-4">
+                        <Target className="w-12 h-12" />
+                      </div>
+                      <h3 className="text-2xl font-bold mb-4">Outcome</h3>
+                      <p className={darkMode ? 'text-blue-200' : 'text-blue-50'}>
+                        Explore the results I deliver - from legacy rewrites to fresh creations.
+                      </p>
                     </button>
-                  );
-                })}
+
+                    <button
+                      onClick={() => setActiveSection('tech-stack')}
+                      className={`p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow ${
+                        darkMode ? 'bg-gradient-to-br from-orange-900 to-amber-800' : 'bg-gradient-to-br from-orange-500 to-amber-500'
+                      } text-white`}
+                    >
+                      <div className="flex items-center justify-center mb-4">
+                        <Code className="w-12 h-12" />
+                      </div>
+                      <h3 className="text-2xl font-bold mb-4">Tech Stack</h3>
+                      <p className={darkMode ? 'text-orange-200' : 'text-orange-50'}>
+                        Technologies I master and use to build amazing software.
+                      </p>
+                    </button>
+
+                    <button
+                      onClick={() => setActiveSection('games')}
+                      className={`p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow ${
+                        darkMode ? 'bg-gradient-to-br from-cyan-900 to-blue-800' : 'bg-gradient-to-br from-cyan-500 to-blue-500'
+                      } text-white`}
+                    >
+                      <div className="flex items-center justify-center mb-4">
+                        <Gamepad2 className="w-12 h-12" />
+                      </div>
+                      <h3 className="text-2xl font-bold mb-4">Games</h3>
+                      <p className={darkMode ? 'text-cyan-200' : 'text-cyan-50'}>
+                        A playful look at my approach to development, business, and growth.
+                      </p>
+                    </button>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => document.getElementById('team-player-section')?.scrollIntoView({ behavior: 'smooth' })}
+                  className={`animate-bounce mt-12 p-3 rounded-full transition-colors ${
+                    darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-blue-100 hover:bg-blue-200'
+                  }`}
+                >
+                  <ChevronDown className={`w-8 h-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                </button>
               </div>
             </div>
+
+            <section id="team-player-section" className={`py-20 px-4 ${
+              darkMode ? 'bg-gradient-to-br from-blue-900 via-cyan-900 to-teal-900' : 'bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-500'
+            }`}>
+              <div className="max-w-6xl mx-auto">
+                <div className="flex items-center justify-center mb-8">
+                  <Users className="w-16 h-16 text-white" />
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">Team Player at Heart</h2>
+                <div className="grid md:grid-cols-2 gap-8 text-white">
+                  <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+                    <h3 className="text-2xl font-semibold mb-4">Collaboration First</h3>
+                    <p className="text-lg leading-relaxed text-blue-50">
+                      I thrive in team environments where ideas flow freely and everyone contributes to building something greater than themselves. Whether it's pair programming, code reviews, or brainstorming sessions, I bring energy and openness to every collaboration.
+                    </p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+                    <h3 className="text-2xl font-semibold mb-4">Communication & Empathy</h3>
+                    <p className="text-lg leading-relaxed text-blue-50">
+                      Great software is built by great teams. I value clear communication, active listening, and understanding different perspectives. I adapt my communication style to ensure everyone is on the same page, from developers to stakeholders.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className={`py-20 px-4 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+              <div className="max-w-6xl mx-auto">
+                <div className="flex items-center justify-center mb-8">
+                  <TrendingUp className={`w-16 h-16 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                </div>
+                <h2 className={`text-4xl md:text-5xl font-bold text-center mb-8 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>NPS & Bug Fixing</h2>
+                <div className="max-w-4xl mx-auto">
+                  <div className={`p-10 rounded-2xl border-2 mb-8 ${
+                    darkMode ? 'bg-gray-700 border-blue-700' : 'bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200'
+                  }`}>
+                    <p className={`text-xl leading-relaxed mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      There's a direct correlation between bug-free software and customer satisfaction. Every bug fixed is a step toward a better user experience and a higher NPS score. I don't just see bugs as technical issues; I see them as opportunities to improve the product and delight users.
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-6 mt-8">
+                      <div className="text-center">
+                        <div className={`text-4xl font-bold mb-2 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Fewer Bugs</div>
+                        <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Happier Users</div>
+                      </div>
+                      <div className="text-center">
+                        <div className={`text-4xl font-bold mb-2 ${darkMode ? 'text-orange-400' : 'text-orange-600'}`}>Higher NPS</div>
+                        <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Better Retention</div>
+                      </div>
+                      <div className="text-center">
+                        <div className={`text-4xl font-bold mb-2 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>More Trust</div>
+                        <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Brand Loyalty</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <button
+                      onClick={() => setActiveSection('contact')}
+                      className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl"
+                    >
+                      <Star className="w-5 h-5" />
+                      Let's Build Something Great
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="cooperate-section" className={`py-20 px-4 ${
+              darkMode ? 'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-gradient-to-br from-cyan-50 to-blue-50'
+            }`}>
+              <div className="max-w-4xl mx-auto text-center">
+                <div className="flex items-center justify-center mb-8">
+                  <Handshake className={`w-16 h-16 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`} />
+                </div>
+                <h2 className={`text-4xl md:text-5xl font-bold mb-8 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Let's Cooperate</h2>
+                <p className={`text-xl mb-8 leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Whether you need help with a legacy codebase, want to build something new, or just need a reliable developer who gets things done - I'm here to help. Let's turn your vision into reality.
+                </p>
+                <button
+                  onClick={() => setActiveSection('contact')}
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl text-lg"
+                >
+                  <Send className="w-5 h-5" />
+                  Get In Touch
+                </button>
+              </div>
+            </section>
           </div>
         );
 
