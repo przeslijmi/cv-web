@@ -190,23 +190,295 @@ function App() {
               </div>
             </section>
 
+            <section className={`py-20 px-4 ${darkMode ? 'bg-gray-800' : 'bg-gradient-to-br from-orange-50 to-red-50'}`}>
+              <div className="max-w-6xl mx-auto">
+                <div className="flex items-center justify-center mb-8">
+                  <RefreshCw className={`w-16 h-16 ${darkMode ? 'text-orange-400' : 'text-orange-600'}`} />
+                </div>
+                <h2 className={`text-4xl md:text-5xl font-bold text-center mb-8 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Legacy Application Rewriting</h2>
+                <div className="max-w-4xl mx-auto space-y-6">
+                  <p className={`text-xl leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    Got a legacy system that's hard to maintain? I specialize in transforming outdated codebases into modern, efficient applications. Whether it's migrating from old PHP to Laravel, refactoring monolithic code, or modernizing your entire tech stack - I've got you covered.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg`}>
+                      <h3 className={`text-xl font-bold mb-3 ${darkMode ? 'text-orange-400' : 'text-orange-600'}`}>Zero Downtime</h3>
+                      <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
+                        Careful planning and execution ensure your users never experience interruptions during the migration process.
+                      </p>
+                    </div>
+                    <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg`}>
+                      <h3 className={`text-xl font-bold mb-3 ${darkMode ? 'text-orange-400' : 'text-orange-600'}`}>Preserve Business Logic</h3>
+                      <p className={darkMode ? 'text-gray-300' : 'text-gray-700'}>
+                        I understand the importance of maintaining your critical business rules while modernizing the implementation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className={`py-20 px-4 ${darkMode ? 'bg-gradient-to-br from-purple-900 to-pink-900' : 'bg-gradient-to-br from-purple-600 to-pink-600'} text-white`}>
+              <div className="max-w-6xl mx-auto">
+                <div className="flex items-center justify-center mb-8">
+                  <Smartphone className="w-16 h-16" />
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Mobile App Development</h2>
+                <div className="max-w-4xl mx-auto space-y-6">
+                  <p className="text-xl leading-relaxed text-purple-50">
+                    Building cross-platform mobile applications with React Native that deliver native performance and user experience. From concept to deployment on both iOS and Android app stores.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                      <h3 className="text-xl font-bold mb-3">Native Feel</h3>
+                      <p className="text-purple-50">Smooth animations, gestures, and performance that users expect from native apps.</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                      <h3 className="text-xl font-bold mb-3">Single Codebase</h3>
+                      <p className="text-purple-50">Write once, deploy to both iOS and Android, reducing development time and costs.</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                      <h3 className="text-xl font-bold mb-3">Offline First</h3>
+                      <p className="text-purple-50">Apps that work seamlessly even without internet connection.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className={`py-20 px-4 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+              <div className="max-w-6xl mx-auto">
+                <div className="flex items-center justify-center mb-8">
+                  <Brain className={`w-16 h-16 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                </div>
+                <h2 className={`text-4xl md:text-5xl font-bold text-center mb-8 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>AI: Speed Meets Experience</h2>
+                <div className="max-w-4xl mx-auto">
+                  <div className={`p-10 rounded-2xl border-2 mb-8 ${
+                    darkMode ? 'bg-gray-700 border-blue-700' : 'bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200'
+                  }`}>
+                    <p className={`text-xl leading-relaxed mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      AI tools like GitHub Copilot and ChatGPT are revolutionizing software development. I leverage these tools to move 2-3x faster, but my 20+ years of experience ensures the architecture, security, and scalability are never compromised.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-8">
+                      <div>
+                        <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>AI Gives Me Speed</h3>
+                        <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                          <li className="flex items-start gap-2">
+                            <Zap className={`w-5 h-5 mt-1 flex-shrink-0 ${darkMode ? 'text-yellow-400' : 'text-yellow-500'}`} />
+                            <span>Rapid prototyping and iteration</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Zap className={`w-5 h-5 mt-1 flex-shrink-0 ${darkMode ? 'text-yellow-400' : 'text-yellow-500'}`} />
+                            <span>Automated boilerplate generation</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Zap className={`w-5 h-5 mt-1 flex-shrink-0 ${darkMode ? 'text-yellow-400' : 'text-yellow-500'}`} />
+                            <span>Quick exploration of solutions</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>Experience Gives Me Quality</h3>
+                        <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                          <li className="flex items-start gap-2">
+                            <Star className={`w-5 h-5 mt-1 flex-shrink-0 ${darkMode ? 'text-cyan-400' : 'text-cyan-500'}`} />
+                            <span>Validated architecture decisions</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Star className={`w-5 h-5 mt-1 flex-shrink-0 ${darkMode ? 'text-cyan-400' : 'text-cyan-500'}`} />
+                            <span>Security and performance optimization</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Star className={`w-5 h-5 mt-1 flex-shrink-0 ${darkMode ? 'text-cyan-400' : 'text-cyan-500'}`} />
+                            <span>Catching edge cases AI might miss</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className={`py-20 px-4 ${darkMode ? 'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-gradient-to-br from-green-50 to-teal-50'}`}>
+              <div className="max-w-6xl mx-auto">
+                <h2 className={`text-4xl md:text-5xl font-bold text-center mb-12 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>What People Say</h2>
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className={`p-8 rounded-2xl shadow-xl ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className={`w-5 h-5 fill-yellow-400 ${darkMode ? 'text-yellow-400' : 'text-yellow-500'}`} />
+                      ))}
+                    </div>
+                    <p className={`mb-4 italic ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      "Karol transformed our legacy PHP application into a modern Laravel system. The migration was seamless, and our team is now much more productive."
+                    </p>
+                    <div className={`font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-900'}`}>Sarah M.</div>
+                    <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>CTO, TechStart Inc.</div>
+                  </div>
+
+                  <div className={`p-8 rounded-2xl shadow-xl ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className={`w-5 h-5 fill-yellow-400 ${darkMode ? 'text-yellow-400' : 'text-yellow-500'}`} />
+                      ))}
+                    </div>
+                    <p className={`mb-4 italic ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      "His debugging skills are exceptional. He found and fixed issues that had been plaguing us for months. Our NPS went up by 15 points!"
+                    </p>
+                    <div className={`font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-900'}`}>Michael K.</div>
+                    <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Product Manager, DataFlow</div>
+                  </div>
+
+                  <div className={`p-8 rounded-2xl shadow-xl ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className={`w-5 h-5 fill-yellow-400 ${darkMode ? 'text-yellow-400' : 'text-yellow-500'}`} />
+                      ))}
+                    </div>
+                    <p className={`mb-4 italic ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      "A true professional who combines speed with quality. The React Native app he built performs beautifully on both iOS and Android."
+                    </p>
+                    <div className={`font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-900'}`}>Jennifer L.</div>
+                    <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Founder, FitLife App</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <section id="cooperate-section" className={`py-20 px-4 ${
-              darkMode ? 'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-gradient-to-br from-cyan-50 to-blue-50'
+              darkMode ? 'bg-gray-800' : 'bg-white'
             }`}>
-              <div className="max-w-4xl mx-auto text-center">
+              <div className="max-w-6xl mx-auto">
                 <div className="flex items-center justify-center mb-8">
                   <Handshake className={`w-16 h-16 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`} />
                 </div>
-                <h2 className={`text-4xl md:text-5xl font-bold mb-8 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Let's Cooperate</h2>
-                <p className={`text-xl mb-8 leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                  Whether you need help with a legacy codebase, want to build something new, or just need a reliable developer who gets things done - I'm here to help. Let's turn your vision into reality.
+                <h2 className={`text-4xl md:text-5xl font-bold text-center mb-12 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>How We Could Cooperate</h2>
+                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-blue-50'}`}>
+                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-900'}`}>Full-Time Engagement</h3>
+                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      Join your team as a dedicated developer, fully immersed in your project and culture.
+                    </p>
+                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-blue-400' : 'text-blue-600'}>✓</span>
+                        <span>40 hours/week commitment</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-blue-400' : 'text-blue-600'}>✓</span>
+                        <span>Daily standups and team meetings</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-blue-400' : 'text-blue-600'}>✓</span>
+                        <span>Long-term partnership</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-cyan-50'}`}>
+                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-cyan-400' : 'text-cyan-900'}`}>Project-Based</h3>
+                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      Fixed-scope projects with clear deliverables and timelines.
+                    </p>
+                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>✓</span>
+                        <span>Defined scope and budget</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>✓</span>
+                        <span>Milestone-based delivery</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>✓</span>
+                        <span>Perfect for specific needs</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-orange-50'}`}>
+                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-orange-400' : 'text-orange-900'}`}>Consulting & Code Review</h3>
+                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      Expert advice on architecture, performance, and best practices.
+                    </p>
+                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>✓</span>
+                        <span>Architecture review</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>✓</span>
+                        <span>Code quality assessment</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>✓</span>
+                        <span>Performance optimization</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-purple-50'}`}>
+                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-purple-400' : 'text-purple-900'}`}>Emergency Support</h3>
+                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      Critical bug fixes and urgent issues resolved quickly.
+                    </p>
+                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>✓</span>
+                        <span>Quick response time</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>✓</span>
+                        <span>Production issue resolution</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>✓</span>
+                        <span>Minimize downtime</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className={`py-20 px-4 ${darkMode ? 'bg-gradient-to-br from-blue-900 to-cyan-900' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} text-white`}>
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-4xl md:text-5xl font-bold mb-8">Get In Touch</h2>
+                <p className="text-xl mb-8 text-blue-50">
+                  Ready to start your project or just want to discuss possibilities? Let's talk!
                 </p>
+                <div className="flex flex-wrap justify-center gap-4 mb-8">
+                  <a
+                    href="tel:+48123456789"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg font-semibold transition-all"
+                  >
+                    <Phone className="w-5 h-5" />
+                    +48 123 456 789
+                  </a>
+                  <a
+                    href="mailto:karol.nowakowski@example.com"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg font-semibold transition-all"
+                  >
+                    <Mail className="w-5 h-5" />
+                    Email Me
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/karol-nowakowski"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg font-semibold transition-all"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                    LinkedIn
+                  </a>
+                </div>
                 <button
                   onClick={() => setActiveSection('contact')}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl text-lg"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 font-bold rounded-lg transition-all shadow-xl text-lg"
                 >
                   <Send className="w-5 h-5" />
-                  Get In Touch
+                  Send a Message
                 </button>
               </div>
             </section>
