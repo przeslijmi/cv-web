@@ -225,22 +225,64 @@ function App() {
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Mobile App Development</h2>
                 <div className="max-w-4xl mx-auto space-y-6">
-                  <p className="text-xl leading-relaxed text-purple-50">
-                    Building cross-platform mobile applications with React Native that deliver native performance and user experience. From concept to deployment on both iOS and Android app stores.
+                  <p className="text-xl leading-relaxed text-purple-50 text-center mb-8">
+                    Building cross-platform mobile applications with React Native that deliver native performance and user experience.
                   </p>
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-                      <h3 className="text-xl font-bold mb-3">Native Feel</h3>
-                      <p className="text-purple-50">Smooth animations, gestures, and performance that users expect from native apps.</p>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+                      <h3 className="text-3xl font-bold mb-4 flex items-center gap-3">
+                        <Smartphone className="w-8 h-8" />
+                        iOS Development
+                      </h3>
+                      <p className="text-purple-50 mb-4">Native iOS experience with React Native, deployed to App Store.</p>
+                      <ul className="space-y-2 text-purple-50">
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>App Store deployment and optimization</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>iOS-specific features and integrations</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>Apple Human Interface Guidelines</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>Push notifications and background tasks</span>
+                        </li>
+                      </ul>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-                      <h3 className="text-xl font-bold mb-3">Single Codebase</h3>
-                      <p className="text-purple-50">Write once, deploy to both iOS and Android, reducing development time and costs.</p>
+                    <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+                      <h3 className="text-3xl font-bold mb-4 flex items-center gap-3">
+                        <Smartphone className="w-8 h-8" />
+                        Android Development
+                      </h3>
+                      <p className="text-purple-50 mb-4">Native Android experience with React Native, deployed to Google Play.</p>
+                      <ul className="space-y-2 text-purple-50">
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>Google Play Store deployment</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>Android-specific features and permissions</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>Material Design implementation</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span>✓</span>
+                          <span>Device compatibility optimization</span>
+                        </li>
+                      </ul>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-                      <h3 className="text-xl font-bold mb-3">Offline First</h3>
-                      <p className="text-purple-50">Apps that work seamlessly even without internet connection.</p>
-                    </div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 mt-8">
+                    <h4 className="text-xl font-bold mb-3 text-center">Why React Native?</h4>
+                    <p className="text-purple-50 text-center">Single codebase for both platforms, faster development, easier maintenance, and 90% code reuse between iOS and Android.</p>
                   </div>
                 </div>
               </div>
@@ -354,132 +396,192 @@ function App() {
                   <Handshake className={`w-16 h-16 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`} />
                 </div>
                 <h2 className={`text-4xl md:text-5xl font-bold text-center mb-12 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>How We Could Cooperate</h2>
-                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-blue-50'}`}>
-                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-900'}`}>Full-Time Engagement</h3>
-                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      Join your team as a dedicated developer, fully immersed in your project and culture.
+
+                <div className="max-w-5xl mx-auto space-y-12">
+                  <div className={`p-10 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-blue-900 to-cyan-900' : 'bg-gradient-to-br from-blue-500 to-cyan-500'} text-white`}>
+                    <h3 className="text-3xl font-bold mb-6 text-center">Let's Try</h3>
+                    <p className="text-xl text-center mb-8 text-blue-50">
+                      No formal commitment needed. Let's start with a single issue or task and see how we work together.
                     </p>
-                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-blue-400' : 'text-blue-600'}>✓</span>
-                        <span>40 hours/week commitment</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-blue-400' : 'text-blue-600'}>✓</span>
-                        <span>Daily standups and team meetings</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-blue-400' : 'text-blue-600'}>✓</span>
-                        <span>Long-term partnership</span>
-                      </li>
-                    </ul>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                        <h4 className="text-xl font-bold mb-3">Per-Issue Basis</h4>
+                        <p className="text-blue-50 mb-3">Pick a specific bug, feature, or task. No strings attached.</p>
+                        <ul className="space-y-2 text-blue-50">
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Fixed price per issue</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>No long-term commitment</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Quick turnaround</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                        <h4 className="text-xl font-bold mb-3">Trial Period</h4>
+                        <p className="text-blue-50 mb-3">A short trial to evaluate if we're a good fit for each other.</p>
+                        <ul className="space-y-2 text-blue-50">
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>1-2 week trial project</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Test communication & workflow</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Low risk for both sides</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-cyan-50'}`}>
-                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-cyan-400' : 'text-cyan-900'}`}>Project-Based</h3>
-                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      Fixed-scope projects with clear deliverables and timelines.
+                  <div className={`p-10 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-orange-900 to-amber-900' : 'bg-gradient-to-br from-orange-500 to-amber-500'} text-white`}>
+                    <h3 className="text-3xl font-bold mb-6 text-center">Let's Get It Done</h3>
+                    <p className="text-xl text-center mb-8 text-orange-50">
+                      Ready for a dedicated partnership? Join forces for part-time or full-time collaboration.
                     </p>
-                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>✓</span>
-                        <span>Defined scope and budget</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>✓</span>
-                        <span>Milestone-based delivery</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>✓</span>
-                        <span>Perfect for specific needs</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-orange-50'}`}>
-                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-orange-400' : 'text-orange-900'}`}>Consulting & Code Review</h3>
-                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      Expert advice on architecture, performance, and best practices.
-                    </p>
-                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>✓</span>
-                        <span>Architecture review</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>✓</span>
-                        <span>Code quality assessment</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>✓</span>
-                        <span>Performance optimization</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-purple-50'}`}>
-                    <h3 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-purple-400' : 'text-purple-900'}`}>Emergency Support</h3>
-                    <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      Critical bug fixes and urgent issues resolved quickly.
-                    </p>
-                    <ul className={`space-y-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>✓</span>
-                        <span>Quick response time</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>✓</span>
-                        <span>Production issue resolution</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>✓</span>
-                        <span>Minimize downtime</span>
-                      </li>
-                    </ul>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                        <h4 className="text-xl font-bold mb-3">Part-Time</h4>
+                        <p className="text-orange-50 mb-3">Flexible hours to fit your project needs and budget.</p>
+                        <ul className="space-y-2 text-orange-50">
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>10-30 hours per week</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Flexible schedule</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Cost-effective solution</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Regular standups & updates</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                        <h4 className="text-xl font-bold mb-3">Full-Time</h4>
+                        <p className="text-orange-50 mb-3">Complete dedication to your project and team.</p>
+                        <ul className="space-y-2 text-orange-50">
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>40 hours per week</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Fully integrated with your team</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Daily standups & meetings</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span>✓</span>
+                            <span>Long-term partnership</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
 
             <section className={`py-20 px-4 ${darkMode ? 'bg-gradient-to-br from-blue-900 to-cyan-900' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} text-white`}>
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-bold mb-8">Get In Touch</h2>
-                <p className="text-xl mb-8 text-blue-50">
+              <div className="max-w-5xl mx-auto">
+                <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">Get In Touch</h2>
+                <p className="text-xl mb-12 text-blue-50 text-center max-w-3xl mx-auto">
                   Ready to start your project or just want to discuss possibilities? Let's talk!
                 </p>
-                <div className="flex flex-wrap justify-center gap-4 mb-8">
-                  <a
-                    href="tel:+48123456789"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg font-semibold transition-all"
-                  >
-                    <Phone className="w-5 h-5" />
-                    +48 123 456 789
-                  </a>
-                  <a
-                    href="mailto:karol.nowakowski@example.com"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg font-semibold transition-all"
-                  >
-                    <Mail className="w-5 h-5" />
-                    Email Me
-                  </a>
-                  <a
-                    href="https://linkedin.com/in/karol-nowakowski"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg font-semibold transition-all"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                    LinkedIn
-                  </a>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div className="space-y-4">
+                      <a
+                        href="tel:+48123456789"
+                        className="flex items-center gap-4 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-all border border-white/20"
+                      >
+                        <Phone className="w-6 h-6 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold">Phone</div>
+                          <div className="text-blue-100">+48 123 456 789</div>
+                        </div>
+                      </a>
+                      <a
+                        href="mailto:karol.nowakowski@example.com"
+                        className="flex items-center gap-4 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-all border border-white/20"
+                      >
+                        <Mail className="w-6 h-6 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold">Email</div>
+                          <div className="text-blue-100">karol.nowakowski@example.com</div>
+                        </div>
+                      </a>
+                      <a
+                        href="https://linkedin.com/in/karol-nowakowski"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-4 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-all border border-white/20"
+                      >
+                        <Linkedin className="w-6 h-6 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold">LinkedIn</div>
+                          <div className="text-blue-100">Connect professionally</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+                    <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                      <div>
+                        <label className="block mb-2 font-medium">Name</label>
+                        <input
+                          type="text"
+                          className="w-full p-3 rounded-lg bg-white/10 border-2 border-white/20 focus:border-white focus:ring-2 focus:ring-white/50 outline-none transition-all text-white placeholder-blue-200"
+                          placeholder="Your name"
+                        />
+                      </div>
+                      <div>
+                        <label className="block mb-2 font-medium">Email</label>
+                        <input
+                          type="email"
+                          className="w-full p-3 rounded-lg bg-white/10 border-2 border-white/20 focus:border-white focus:ring-2 focus:ring-white/50 outline-none transition-all text-white placeholder-blue-200"
+                          placeholder="your.email@example.com"
+                        />
+                      </div>
+                      <div>
+                        <label className="block mb-2 font-medium">Message</label>
+                        <textarea
+                          rows={4}
+                          className="w-full p-3 rounded-lg bg-white/10 border-2 border-white/20 focus:border-white focus:ring-2 focus:ring-white/50 outline-none transition-all text-white placeholder-blue-200 resize-none"
+                          placeholder="Tell me about your project..."
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        className="w-full bg-white text-blue-600 hover:bg-blue-50 font-bold py-4 rounded-lg transition-all shadow-xl flex items-center justify-center gap-2"
+                      >
+                        <Send className="w-5 h-5" />
+                        Send Message
+                      </button>
+                    </form>
+                  </div>
                 </div>
-                <button
-                  onClick={() => setActiveSection('contact')}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 font-bold rounded-lg transition-all shadow-xl text-lg"
-                >
-                  <Send className="w-5 h-5" />
-                  Send a Message
-                </button>
               </div>
             </section>
           </div>
@@ -1033,24 +1135,112 @@ function App() {
         {renderContent()}
       </main>
 
-      <footer className={`mt-auto border-t py-8 ${
-        darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-blue-100'
-      }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className={`text-center md:text-left ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              © 2024 Karol Nowakowski. All rights reserved.
+      <footer className="mt-auto">
+        <section className={`py-20 px-4 ${darkMode ? 'bg-gradient-to-br from-blue-900 to-cyan-900' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} text-white`}>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">Get In Touch</h2>
+            <p className="text-xl mb-12 text-blue-50 text-center max-w-3xl mx-auto">
+              Ready to start your project or just want to discuss possibilities? Let's talk!
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                <div className="space-y-4">
+                  <a
+                    href="tel:+48123456789"
+                    className="flex items-center gap-4 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-all border border-white/20"
+                  >
+                    <Phone className="w-6 h-6 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold">Phone</div>
+                      <div className="text-blue-100">+48 123 456 789</div>
+                    </div>
+                  </a>
+                  <a
+                    href="mailto:karol.nowakowski@example.com"
+                    className="flex items-center gap-4 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-all border border-white/20"
+                  >
+                    <Mail className="w-6 h-6 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold">Email</div>
+                      <div className="text-blue-100">karol.nowakowski@example.com</div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/karol-nowakowski"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-all border border-white/20"
+                  >
+                    <Linkedin className="w-6 h-6 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold">LinkedIn</div>
+                      <div className="text-blue-100">Connect professionally</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                  <div>
+                    <label className="block mb-2 font-medium">Name</label>
+                    <input
+                      type="text"
+                      className="w-full p-3 rounded-lg bg-white/10 border-2 border-white/20 focus:border-white focus:ring-2 focus:ring-white/50 outline-none transition-all text-white placeholder-blue-200"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-2 font-medium">Email</label>
+                    <input
+                      type="email"
+                      className="w-full p-3 rounded-lg bg-white/10 border-2 border-white/20 focus:border-white focus:ring-2 focus:ring-white/50 outline-none transition-all text-white placeholder-blue-200"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-2 font-medium">Message</label>
+                    <textarea
+                      rows={4}
+                      className="w-full p-3 rounded-lg bg-white/10 border-2 border-white/20 focus:border-white focus:ring-2 focus:ring-white/50 outline-none transition-all text-white placeholder-blue-200 resize-none"
+                      placeholder="Tell me about your project..."
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-white text-blue-600 hover:bg-blue-50 font-bold py-4 rounded-lg transition-all shadow-xl flex items-center justify-center gap-2"
+                  >
+                    <Send className="w-5 h-5" />
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
-            <div className="flex items-center gap-4">
-              <a href="tel:+48123456789" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
-                <Phone size={20} />
-              </a>
-              <a href="mailto:karol.nowakowski@example.com" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
-                <Mail size={20} />
-              </a>
-              <a href="https://linkedin.com/in/karol-nowakowski" target="_blank" rel="noopener noreferrer" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
-                <Linkedin size={20} />
-              </a>
+          </div>
+        </section>
+
+        <div className={`border-t py-8 ${
+          darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-blue-100'
+        }`}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className={`text-center md:text-left ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                © 2024 Karol Nowakowski. All rights reserved.
+              </div>
+              <div className="flex items-center gap-4">
+                <a href="tel:+48123456789" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
+                  <Phone size={20} />
+                </a>
+                <a href="mailto:karol.nowakowski@example.com" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
+                  <Mail size={20} />
+                </a>
+                <a href="https://linkedin.com/in/karol-nowakowski" target="_blank" rel="noopener noreferrer" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
+                  <Linkedin size={20} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
