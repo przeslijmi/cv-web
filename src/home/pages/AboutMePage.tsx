@@ -66,7 +66,7 @@ export default function AboutMePage() {
           I'm a full-stack developer who loves building things that matter. My journey in tech started over 20 years ago, and I've worked on everything from small startups to enterprise applications. I specialize in PHP, Laravel, Vue, React, and React Native, but I'm always exploring new technologies.
         </p>
         <p className="text-lg leading-relaxed mt-4 text-gray-700 dark:text-gray-300">
-          When I'm not coding, you'll find me mentoring junior developers, writing technical documentation, or thinking about how to improve user experiences. I believe in giving back to the community that has given me so much.
+          When I'm not coding, you'll find me mentoring junior developers, writing technical documentation, or thinking about how to improve user experiences. I believe that a developer’s true purpose lies in delivering value and enhancing customer satisfaction, rather than simply writing code for the sake of coding.
         </p>
       </Section>
 

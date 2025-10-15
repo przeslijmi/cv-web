@@ -2,19 +2,19 @@
 export const comments = [
   {
     rate: 5,
-    content: 'Karol transformed our legacy PHP application into a modern Laravel system. The migration was seamless, and our team is now much more productive.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio at odio sollicitudin hendrerit id bibendum sem. Fusce quis.',
     name: 'Sarah M.',
     company: 'CTO, TechStart Inc.',
   },
   {
     rate: 5,
-    content: 'His debugging skills are exceptional. He found and fixed issues that had been plaguing us for months. Our NPS went up by 15 points!',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio at odio sollicitudin hendrerit id bibendum sem. Fusce quis.',
     name: 'Michael K.',
     company: 'Product Manager, DataFlow',
   },
   {
     rate: 5,
-    content: 'A true professional who combines speed with quality. The React Native app he built performs beautifully on both iOS and Android.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio at odio sollicitudin hendrerit id bibendum sem. Fusce quis.',
     name: 'Jennifer L.',
     company: 'Founder, FitLife App',
   },
