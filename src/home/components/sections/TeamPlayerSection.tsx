@@ -1,4 +1,4 @@
-import Section from '@home/components/Section';
+import HomeSection from '@home/components/HomeSection';
 import { Users } from 'lucide-react';
 
 interface Props {}
@@ -6,7 +6,7 @@ interface Props {}
 export default function TeamPlayerSection({}: Props) {
 
   return (
-    <Section
+    <HomeSection
       id="team-player-section"
       className="dark:bg-gradient-to-br dark:from-blue-900 dark:via-cyan-900 dark:to-teal-900 bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-500"
       icon={Users}

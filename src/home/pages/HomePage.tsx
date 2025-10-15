@@ -8,7 +8,7 @@ import CommentsSection from '@home/components/sections/CommentsSection';
 import CooperateSection from '@home/components/sections/CooperateSection';
 import Layout from '@frame/layouts/Layout';
 
-function Home() {
+export default function HomePage() {
 
   return (
     <Layout>
@@ -23,5 +23,3 @@ function Home() {
     </Layout>
   );
 }
-
-export default Home;

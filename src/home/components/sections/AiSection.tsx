@@ -1,5 +1,5 @@
 import IconedList from '@frame/components/IconedList';
-import Section from '@home/components/Section';
+import HomeSection from '@home/components/HomeSection';
 import { Brain, Star, Zap } from 'lucide-react';
 
 interface Props {}
@@ -7,7 +7,7 @@ interface Props {}
 export default function AiSection({}: Props) {
 
   return (
-    <Section
+    <HomeSection
       className="bg-white dark:bg-gray-800"
       icon={Brain}
       iconClass="text-blue-600 dark:text-blue-400"

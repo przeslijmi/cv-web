@@ -13,7 +13,7 @@ interface Props {
   iconClass?: string;
 }
 
-export default function Section({
+export default function HomeSection({
   className,
   title,
   titleClass,

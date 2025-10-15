@@ -1,4 +1,4 @@
-import Section from '@home/components/Section';
+import HomeSection from '@home/components/HomeSection';
 import { comments } from '@home/constants/comments';
 import { Star } from 'lucide-react';
 
@@ -7,7 +7,7 @@ interface Props {}
 export default function CommentsSection({}: Props) {
 
   return (
-    <Section
+    <HomeSection
       className="bg-gradient-to-br from-green-50 to-teal-50 dark:from-gray-900 dark:to-gray-800"
       title="What People Say"
       titleClass="text-gray-900 dark:text-gray-100"

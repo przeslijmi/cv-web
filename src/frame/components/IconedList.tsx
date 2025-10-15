@@ -16,10 +16,10 @@ export default function IconedList({
 
   return (
     <ul className={`space-y-2 ${listClass}`}>
-      {list.map((element: string) => {
+      {list.map((element: string, index: number) => {
         const Icon = icon;
 
-        return (<li className="flex items-start gap-2">
+        return (<li key={index} className="flex items-start gap-2">
           <Icon className={`w-5 h-5 mt-1 flex-shrink-0 ${iconClass}`} />
           <span>{element}</span>
         </li>

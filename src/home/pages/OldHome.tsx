@@ -444,31 +444,6 @@ function OldHome() {
         {renderContent()}
       </main>
 
-      <footer className="mt-auto">
-
-        <div className={`border-t py-8 ${
-          darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-blue-100'
-        }`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className={`text-center md:text-left ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                © 2024 Karol Nowakowski. All rights reserved.
-              </div>
-              <div className="flex items-center gap-4">
-                <a href="tel:+48123456789" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
-                  <Phone size={20} />
-                </a>
-                <a href="mailto:karol.nowakowski@example.com" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
-                  <Mail size={20} />
-                </a>
-                <a href="https://linkedin.com/in/karol-nowakowski" target="_blank" rel="noopener noreferrer" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
-                  <Linkedin size={20} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

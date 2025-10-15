@@ -1,4 +1,4 @@
-import Section from '@home/components/Section';
+import HomeSection from '@home/components/HomeSection';
 import { RefreshCw } from 'lucide-react';
 
 function Box({ title, text }: {
@@ -18,7 +18,7 @@ interface Props {}
 export default function LegacyCodeSection({}: Props) {
 
   return (
-    <Section
+    <HomeSection
       className="bg-gradient-to-br from-slate-700 to-slate-900"
       icon={RefreshCw}
       iconClass="text-cyan-600"

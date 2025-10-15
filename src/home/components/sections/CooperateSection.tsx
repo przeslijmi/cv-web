@@ -1,5 +1,5 @@
 import IconedList from '@frame/components/IconedList';
-import Section from '@home/components/Section';
+import HomeSection from '@home/components/HomeSection';
 import { Handshake, Target, Zap } from 'lucide-react';
 
 interface Props {}
@@ -7,7 +7,7 @@ interface Props {}
 export default function CooperateSection({}: Props) {
 
   return (
-    <Section
+    <HomeSection
       className="bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-gray-700 dark:to-gray-900"
       icon={Handshake}
       iconClass="text-amber-600 dark:text-amber-400"

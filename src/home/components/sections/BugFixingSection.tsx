@@ -1,4 +1,4 @@
-import Section from '@home/components/Section';
+import HomeSection from '@home/components/HomeSection';
 import { TrendingUp } from 'lucide-react';
 
 interface Props {}
@@ -6,7 +6,7 @@ interface Props {}
 export default function BugFixingSection({}: Props) {
 
   return (
-    <Section
+    <HomeSection
       className="dark:bg-gray-800 bg-white"
       icon={TrendingUp}
       iconClass="dark:text-blue-400 text-blue-600"

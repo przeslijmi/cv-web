@@ -1,4 +1,4 @@
-import Section from '@home/components/Section';
+import HomeSection from '@home/components/HomeSection';
 import { Smartphone } from 'lucide-react';
 
 interface Props {}
@@ -6,7 +6,7 @@ interface Props {}
 export default function MobileAppsSection({}: Props) {
 
   return (
-    <Section
+    <HomeSection
       className="dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-700 bg-gradient-to-br from-slate-50 to-slate-300 text-white"
       icon={Smartphone}
       iconClass="text-red-800 dark:text-purple-400"
