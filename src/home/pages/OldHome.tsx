@@ -1,0 +1,476 @@
+import { useState } from 'react';
+import { Code, Heart, Gamepad2, Target, Phone, Mail, Linkedin, RefreshCw, Bug, Sparkles, Brain, Layers, Smartphone, TestTube, Coffee, DollarSign, GraduationCap, Zap, ChevronDown, Users, TrendingUp, Star, Send, Handshake } from 'lucide-react';
+import Header from '@frame/components/Header';
+import WelcomeSection from '@home/components/sections/WelcomeSection';
+import TeamPlayerSection from '@home/components/sections/TeamPlayerSection';
+import BugFixingSection from '@home/components/sections/BugFixingSection';
+import LegacyCodeSection from '@home/components/sections/LegacyCodeSection';
+import MobileAppsSection from '@home/components/sections/MobileAppsSection';
+import AiSection from '@home/components/sections/AiSection';
+import CommentsSection from '@home/components/sections/CommentsSection';
+import CooperateSection from '@home/components/sections/CooperateSection';
+
+function OldHome() {
+  const [activeSection, setActiveSection] = useState('landing');
+  const [darkMode] = useState(false);
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case 'landing':
+        return (
+          <div>
+
+            <WelcomeSection />
+            <TeamPlayerSection />
+            <BugFixingSection />
+            <LegacyCodeSection />
+            <MobileAppsSection />
+            <AiSection />
+            <CommentsSection />
+            <CooperateSection />
+
+          </div>
+        );
+
+      case 'about':
+        return (
+          <div className="max-w-5xl mx-auto py-12 px-4 space-y-12">
+            <h1 className={`text-5xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>About Me</h1>
+
+            <section className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800' : 'bg-blue-50'}`}>
+              <h2 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-blue-400' : 'text-blue-900'}`}>My Values</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'}`}>
+                  <h3 className={`text-xl font-semibold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Quality Over Speed</h3>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    I believe in doing things right the first time. While speed matters, quality code that's maintainable and scalable is always my priority.
+                  </p>
+                </div>
+                <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'}`}>
+                  <h3 className={`text-xl font-semibold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Continuous Learning</h3>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    Technology evolves rapidly. I stay current with the latest trends and best practices to deliver modern, efficient solutions.
+                  </p>
+                </div>
+                <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'}`}>
+                  <h3 className={`text-xl font-semibold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>User-Centric Approach</h3>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    Every line of code I write serves an end user. I focus on creating experiences that are intuitive, fast, and delightful.
+                  </p>
+                </div>
+                <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'}`}>
+                  <h3 className={`text-xl font-semibold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Team Collaboration</h3>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    Great software is built by great teams. I thrive in collaborative environments where ideas are shared and everyone grows together.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800' : 'bg-cyan-50'}`}>
+              <h2 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-cyan-400' : 'text-cyan-900'}`}>My Perspective</h2>
+              <div className="space-y-4">
+                <p className={`text-lg leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  With 20 years of experience in software development, I've seen technologies come and go, but the fundamentals remain the same: clean code, solid architecture, and a focus on solving real problems.
+                </p>
+                <p className={`text-lg leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  I approach every project with curiosity and humility. There's always something new to learn, a better way to solve a problem, or a perspective I haven't considered yet.
+                </p>
+                <p className={`text-lg leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  AI tools have revolutionized how we work, but they're tools—not replacements for experience and wisdom. I leverage AI to move faster while ensuring quality and the big picture are never compromised.
+                </p>
+              </div>
+            </section>
+
+            <section className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800' : 'bg-orange-50'}`}>
+              <h2 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-orange-400' : 'text-orange-900'}`}>Bio</h2>
+              <p className={`text-lg leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                I'm a full-stack developer who loves building things that matter. My journey in tech started over 20 years ago, and I've worked on everything from small startups to enterprise applications. I specialize in PHP, Laravel, Vue, React, and React Native, but I'm always exploring new technologies.
+              </p>
+              <p className={`text-lg leading-relaxed mt-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                When I'm not coding, you'll find me mentoring junior developers, writing technical documentation, or thinking about how to improve user experiences. I believe in giving back to the community that has given me so much.
+              </p>
+            </section>
+          </div>
+        );
+
+      case 'outcome':
+        return (
+          <div className="max-w-5xl mx-auto py-12 px-4 space-y-12">
+            <h1 className={`text-5xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>What I Can Do</h1>
+
+            <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800' : 'bg-gradient-to-r from-gray-900 to-gray-800'} text-white`}>
+              <div className="flex items-center gap-4 mb-6">
+                <RefreshCw className="w-12 h-12" />
+                <h2 className="text-3xl font-bold">Legacy Code Rewriting</h2>
+              </div>
+              <p className="text-xl mb-6 text-gray-200">
+                Transforming outdated, unmaintainable code into modern, efficient, and scalable solutions.
+              </p>
+              <ul className="space-y-3 text-lg">
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">✓</span>
+                  <span>Migrate legacy PHP applications to modern Laravel frameworks</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">✓</span>
+                  <span>Refactor monolithic codebases into modular, testable components</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">✓</span>
+                  <span>Improve performance, security, and maintainability</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">✓</span>
+                  <span>Zero downtime deployments and seamless migrations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800' : 'bg-gradient-to-r from-red-50 to-orange-50'}`}>
+              <div className="flex items-center gap-4 mb-6">
+                <Bug className={`w-12 h-12 ${darkMode ? 'text-red-400' : 'text-red-600'}`} />
+                <h2 className={`text-3xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Debugging & Bug Fixing</h2>
+              </div>
+              <p className={`text-xl mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                I hunt down bugs with precision and fix them for good. Every bug fixed improves user experience and boosts your NPS.
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-white'} text-center`}>
+                  <div className={`text-2xl font-bold ${darkMode ? 'text-red-400' : 'text-red-600'}`}>Fewer Bugs</div>
+                  <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Happier Users</div>
+                </div>
+                <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-white'} text-center`}>
+                  <div className={`text-2xl font-bold ${darkMode ? 'text-orange-400' : 'text-orange-600'}`}>Higher NPS</div>
+                  <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Better Retention</div>
+                </div>
+                <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-white'} text-center`}>
+                  <div className={`text-2xl font-bold ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>More Trust</div>
+                  <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Brand Loyalty</div>
+                </div>
+              </div>
+            </div>
+
+            <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800' : 'bg-gradient-to-r from-blue-50 to-cyan-50'}`}>
+              <div className="flex items-center gap-4 mb-6">
+                <Sparkles className={`w-12 h-12 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`} />
+                <h2 className={`text-3xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>New Creations</h2>
+              </div>
+              <p className={`text-xl mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                Building modern applications from scratch with the latest technologies and best practices.
+              </p>
+              <ul className="space-y-3 text-lg">
+                <li className={`flex items-start ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <span className={`mr-2 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>✓</span>
+                  <span>Full-stack web applications with Laravel and Vue/React</span>
+                </li>
+                <li className={`flex items-start ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <span className={`mr-2 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>✓</span>
+                  <span>Mobile apps with React Native</span>
+                </li>
+                <li className={`flex items-start ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <span className={`mr-2 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>✓</span>
+                  <span>RESTful APIs and GraphQL backends</span>
+                </li>
+                <li className={`flex items-start ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <span className={`mr-2 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>✓</span>
+                  <span>Real-time features with WebSockets</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-blue-900 to-cyan-900' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} text-white`}>
+              <div className="flex items-center gap-4 mb-6">
+                <Brain className="w-12 h-12" />
+                <h2 className="text-3xl font-bold">AI-Powered Development</h2>
+              </div>
+              <p className="text-xl text-blue-50 mb-6">
+                AI tools like GitHub Copilot and ChatGPT are game-changers for speed. But my 20 years of experience ensures quality, architecture, and the big picture are never compromised.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                  <Zap className="w-8 h-8 mb-3" />
+                  <h3 className="text-xl font-bold mb-2">AI for Speed</h3>
+                  <p className="text-blue-50">2-3x faster development, quick prototyping, and automated boilerplate</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                  <Target className="w-8 h-8 mb-3" />
+                  <h3 className="text-xl font-bold mb-2">Experience for Quality</h3>
+                  <p className="text-blue-50">Validated architecture, security, scalability, and catching edge cases</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'tech-stack':
+        return (
+          <div className="max-w-5xl mx-auto py-12 px-4 space-y-12">
+            <h1 className={`text-5xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Tech Stack</h1>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-blue-700' : 'bg-blue-50 border-2 border-blue-200'}`}>
+                <Brain className={`w-12 h-12 mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>AI Tools</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  GitHub Copilot, ChatGPT, Claude - leveraging AI for rapid development while maintaining code quality through experience.
+                </p>
+              </div>
+
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-orange-700' : 'bg-orange-50 border-2 border-orange-200'}`}>
+                <Code className={`w-12 h-12 mb-4 ${darkMode ? 'text-orange-400' : 'text-orange-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>PHP</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  20+ years of experience building robust backend systems. Deep understanding of OOP, design patterns, and performance optimization.
+                </p>
+              </div>
+
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-red-700' : 'bg-red-50 border-2 border-red-200'}`}>
+                <Layers className={`w-12 h-12 mb-4 ${darkMode ? 'text-red-400' : 'text-red-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Laravel</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Expert in Laravel ecosystem - Eloquent ORM, queues, events, broadcasting, and building scalable APIs.
+                </p>
+              </div>
+
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-green-700' : 'bg-green-50 border-2 border-green-200'}`}>
+                <Code className={`w-12 h-12 mb-4 ${darkMode ? 'text-green-400' : 'text-green-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Vue.js</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Building reactive, component-based UIs with Vue 3, Composition API, Pinia for state management.
+                </p>
+              </div>
+
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-cyan-700' : 'bg-cyan-50 border-2 border-cyan-200'}`}>
+                <Code className={`w-12 h-12 mb-4 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>React</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Modern React with hooks, context API, and popular libraries. Building performant, maintainable SPAs.
+                </p>
+              </div>
+
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-purple-700' : 'bg-purple-50 border-2 border-purple-200'}`}>
+                <Smartphone className={`w-12 h-12 mb-4 ${darkMode ? 'text-purple-400' : 'text-purple-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>React Native</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Cross-platform mobile development for iOS and Android with native performance.
+                </p>
+              </div>
+
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-blue-700' : 'bg-blue-50 border-2 border-blue-200'}`}>
+                <Code className={`w-12 h-12 mb-4 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>TypeScript</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Type-safe development for catching errors early and improving code maintainability.
+                </p>
+              </div>
+
+              <div className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-800 border-2 border-amber-700' : 'bg-amber-50 border-2 border-amber-200'}`}>
+                <TestTube className={`w-12 h-12 mb-4 ${darkMode ? 'text-amber-400' : 'text-amber-600'}`} />
+                <h2 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Testing</h2>
+                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Vitest, PHPUnit, Jest - comprehensive testing strategies for reliable software.
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'games':
+        return (
+          <div className="max-w-5xl mx-auto py-12 px-4 space-y-12">
+            <h1 className={`text-5xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Let's Play</h1>
+            <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              A playful look at my approach to development, business, and personal growth.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-red-900 to-pink-900' : 'bg-gradient-to-br from-red-500 to-pink-500'} text-white`}>
+                <Heart className="w-12 h-12 mb-4" />
+                <h2 className="text-3xl font-bold mb-4">Motivation Game</h2>
+                <p className="text-lg leading-relaxed">
+                  What drives me? The joy of solving complex problems, the satisfaction of seeing users love what I build, and the endless curiosity about how things work. I wake up excited to code.
+                </p>
+              </div>
+
+              <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-orange-900 to-red-900' : 'bg-gradient-to-br from-orange-500 to-red-500'} text-white`}>
+                <Bug className="w-12 h-12 mb-4" />
+                <h2 className="text-3xl font-bold mb-4">Debugging Game</h2>
+                <p className="text-lg leading-relaxed">
+                  Bugs are puzzles waiting to be solved. I approach debugging like a detective - methodically gathering clues, forming hypotheses, and testing them until I find the root cause.
+                </p>
+              </div>
+
+              <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-blue-900 to-cyan-900' : 'bg-gradient-to-br from-blue-500 to-cyan-500'} text-white`}>
+                <Coffee className="w-12 h-12 mb-4" />
+                <h2 className="text-3xl font-bold mb-4">Coding Game</h2>
+                <p className="text-lg leading-relaxed">
+                  Clean code isn't just about following rules - it's about creating clarity and joy for everyone who reads it. Readability, simplicity, and thoughtful testing are my guiding principles.
+                </p>
+              </div>
+
+              <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-green-900 to-teal-900' : 'bg-gradient-to-br from-green-500 to-teal-500'} text-white`}>
+                <DollarSign className="w-12 h-12 mb-4" />
+                <h2 className="text-3xl font-bold mb-4">Finance Game</h2>
+                <p className="text-lg leading-relaxed">
+                  I understand the business side of tech. Every decision impacts ROI, technical debt, and the bottom line. I prioritize features that deliver value and balance quality with speed.
+                </p>
+              </div>
+
+              <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gradient-to-br from-purple-900 to-pink-900' : 'bg-gradient-to-br from-purple-500 to-pink-500'} text-white md:col-span-2`}>
+                <GraduationCap className="w-12 h-12 mb-4" />
+                <h2 className="text-3xl font-bold mb-4">Teaching Game</h2>
+                <p className="text-lg leading-relaxed">
+                  Sharing knowledge is how we grow as a community. I love mentoring, writing documentation, and helping others level up. Teaching through code reviews, pair programming, and thoughtful questions helps people discover solutions themselves.
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 'contact':
+        return (
+          <div className="max-w-3xl mx-auto py-12 px-4">
+            <h1 className={`text-5xl font-bold mb-12 text-center ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Get In Touch</h1>
+
+            <div className={`p-8 rounded-2xl mb-8 ${darkMode ? 'bg-gray-800' : 'bg-gradient-to-br from-blue-50 to-cyan-50'}`}>
+              <p className={`text-xl mb-8 text-center ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                Interested in working together? Let's discuss how I can help bring your project to life.
+              </p>
+
+              <div className="space-y-4">
+                <a
+                  href="tel:+48123456789"
+                  className={`flex items-center gap-4 p-6 rounded-xl transition-all hover:scale-105 ${
+                    darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:shadow-lg'
+                  }`}
+                >
+                  <Phone className={`w-8 h-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                  <div>
+                    <div className={`font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-900'}`}>Phone</div>
+                    <div className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>+48 123 456 789</div>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:karol.nowakowski@example.com"
+                  className={`flex items-center gap-4 p-6 rounded-xl transition-all hover:scale-105 ${
+                    darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:shadow-lg'
+                  }`}
+                >
+                  <Mail className={`w-8 h-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                  <div>
+                    <div className={`font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-900'}`}>Email</div>
+                    <div className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>karol.nowakowski@example.com</div>
+                  </div>
+                </a>
+
+                <a
+                  href="https://linkedin.com/in/karol-nowakowski"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-4 p-6 rounded-xl transition-all hover:scale-105 ${
+                    darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:shadow-lg'
+                  }`}
+                >
+                  <Linkedin className={`w-8 h-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                  <div>
+                    <div className={`font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-900'}`}>LinkedIn</div>
+                    <div className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Connect with me professionally</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-800' : 'bg-white border-2 border-gray-200'}`}>
+              <h2 className={`text-2xl font-bold mb-6 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>Send a Message</h2>
+              <form className="space-y-4">
+                <div>
+                  <label className={`block mb-2 font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Name</label>
+                  <input
+                    type="text"
+                    className={`w-full p-3 rounded-lg border-2 focus:ring-2 focus:ring-blue-500 outline-none transition-all ${
+                      darkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300'
+                    }`}
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label className={`block mb-2 font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Email</label>
+                  <input
+                    type="email"
+                    className={`w-full p-3 rounded-lg border-2 focus:ring-2 focus:ring-blue-500 outline-none transition-all ${
+                      darkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300'
+                    }`}
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+                <div>
+                  <label className={`block mb-2 font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Message</label>
+                  <textarea
+                    rows={5}
+                    className={`w-full p-3 rounded-lg border-2 focus:ring-2 focus:ring-blue-500 outline-none transition-all ${
+                      darkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300'
+                    }`}
+                    placeholder="Tell me about your project..."
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2"
+                >
+                  <Send className="w-5 h-5" />
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className={`min-h-screen flex flex-col transition-colors duration-300 ${
+      darkMode
+        ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900'
+        : 'bg-gradient-to-br from-blue-50 via-white to-cyan-50'
+    }`}>
+      <Header />
+
+      <main className="flex-grow">
+        {renderContent()}
+      </main>
+
+      <footer className="mt-auto">
+
+        <div className={`border-t py-8 ${
+          darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-blue-100'
+        }`}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className={`text-center md:text-left ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                © 2024 Karol Nowakowski. All rights reserved.
+              </div>
+              <div className="flex items-center gap-4">
+                <a href="tel:+48123456789" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
+                  <Phone size={20} />
+                </a>
+                <a href="mailto:karol.nowakowski@example.com" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
+                  <Mail size={20} />
+                </a>
+                <a href="https://linkedin.com/in/karol-nowakowski" target="_blank" rel="noopener noreferrer" className={`transition-colors ${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'}`}>
+                  <Linkedin size={20} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default OldHome;
