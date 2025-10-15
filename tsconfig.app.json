@@ -7,8 +7,10 @@
     "skipLibCheck": true,
     "baseUrl": "./src",
     "paths": {
+      "@contact/*": ["contact/*"],
       "@frame/*": ["frame/*"],
       "@home/*": ["home/*"],
+      "@outcome/*": ["outcome/*"],
     },
 
     /* Bundler mode */

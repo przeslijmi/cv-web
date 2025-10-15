@@ -6,6 +6,7 @@ import path from 'path';
 export default defineConfig({
   resolve: {
     alias: {
+      '@contact': path.resolve(__dirname, 'src/contact'),
       '@frame': path.resolve(__dirname, 'src/frame'),
       '@home': path.resolve(__dirname, 'src/home'),
       '@outcome': path.resolve(__dirname, 'src/outcome'),

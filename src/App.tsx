@@ -1,3 +1,4 @@
+import ContactPage from '@contact/pages/ContactPage'
 import AboutMePage from '@home/pages/AboutMePage'
 import HomePage from '@home/pages/HomePage'
 import OutcomePage from '@outcome/pages/OutcomePage'
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/about-me" element={<AboutMePage />} />
         <Route path="/outcome" element={<OutcomePage />} />
         <Route path="/tech-stack" element={<TechStackPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   )

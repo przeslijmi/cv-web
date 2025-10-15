@@ -3,10 +3,12 @@ import Header from '@frame/components/Header';
 
 interface Props {
   children: React.ReactNode;
+  contact?: boolean;
 }
 
 export default function Layout({
   children,
+  contact = true,
 }: Props) {
 
   return (
@@ -21,7 +23,7 @@ export default function Layout({
         {children}
       </main>
 
-      <Footer />
+      <Footer contact={contact} />
     </div>
   );
 }
