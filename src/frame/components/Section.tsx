@@ -15,7 +15,7 @@ export default function Section({
 
   return (
     <section className={`p-8 rounded-2xl ${className}`}>
-      <h2 className={`text-3xl font-bold mb-6 ${titleClass}`}>{title}</h2>
+      <h2 className={`text-2xl font-bold mb-6 ${titleClass}`}>{title}</h2>
       {children}
     </section>
   );

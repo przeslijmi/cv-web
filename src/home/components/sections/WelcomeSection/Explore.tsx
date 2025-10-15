@@ -13,6 +13,7 @@ interface Props {
   text: string;
   location: string;
   leadingColor: 'blue'|'amber'|'cyan';
+  disabled?: boolean;
 }
 
 export default function Explore({
@@ -21,12 +22,17 @@ export default function Explore({
   text,
   location,
   leadingColor,
+  disabled
 }: Props) {
   const Icon = icon;
 
   return (
-    <Link to={location}>
-      <div className={`p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow text-white ${backgroundColor[leadingColor]}`}>
+    <Link to={disabled ? '#' : location} className={`${disabled ? 'cursor-not-allowed' : ''}`}>
+      <div className={`
+        p-8 rounded-2xl shadow-xl transition-shadow text-white
+        ${disabled ? 'opacity-20' : 'hover:shadow-2xl'}
+        ${backgroundColor[leadingColor]}
+      `}>
         <div className="flex items-center justify-center mb-4">
           <Icon size={50} />
         </div>

@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       '@frame': path.resolve(__dirname, 'src/frame'),
       '@home': path.resolve(__dirname, 'src/home'),
+      '@outcome': path.resolve(__dirname, 'src/outcome'),
     },
   },
   plugins: [react()],
