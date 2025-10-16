@@ -20,11 +20,6 @@ export default function CommentsSection({}: Props) {
     setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
   };
 
-  const visibleComments = comments.slice(
-    currentIndex * itemsPerPage,
-    (currentIndex + 1) * itemsPerPage
-  );
-
   return (
     <Section
       className="bg-gradient-to-br from-green-50 to-teal-50 dark:from-gray-900 dark:to-gray-800"
@@ -51,54 +46,70 @@ export default function CommentsSection({}: Props) {
             </>
           )}
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {visibleComments.map((c, i) => {
-              const actualIndex = currentIndex * itemsPerPage + i;
-              const isHovered = hoveredIndex === actualIndex;
-
-              return (
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-700 ease-in-out"
+              style={{
+                transform: `translateX(-${currentIndex * 100}%)`,
+              }}
+            >
+              {[...Array(totalPages)].map((_, pageIndex) => (
                 <div
-                  key={actualIndex}
-                  className="p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-800 transition-all duration-300 hover:shadow-2xl hover:scale-105 cursor-pointer relative group"
-                  onMouseEnter={() => setHoveredIndex(actualIndex)}
-                  onMouseLeave={() => setHoveredIndex(null)}
+                  key={pageIndex}
+                  className="min-w-full grid md:grid-cols-3 gap-8 px-1"
                 >
-                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <Maximize2 className="w-5 h-5 text-gray-400 dark:text-gray-500" />
-                  </div>
+                  {comments
+                    .slice(pageIndex * itemsPerPage, (pageIndex + 1) * itemsPerPage)
+                    .map((c, i) => {
+                      const actualIndex = pageIndex * itemsPerPage + i;
+                      const isHovered = hoveredIndex === actualIndex;
 
-                  <div className="flex items-center gap-1 mb-4">
-                    {[...Array(c.rate)].map((_, ri) => (
-                      <Star key={ri} className="w-5 h-5 fill-yellow-400 text-yellow-500 dark:text-yellow-400" />
-                    ))}
-                  </div>
+                      return (
+                        <div
+                          key={actualIndex}
+                          className="p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-800 transition-all duration-300 hover:shadow-2xl hover:scale-105 cursor-pointer relative group"
+                          onMouseEnter={() => setHoveredIndex(actualIndex)}
+                          onMouseLeave={() => setHoveredIndex(null)}
+                        >
+                          <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <Maximize2 className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+                          </div>
 
-                  <div className="relative">
-                    <p
-                      className={`mb-4 italic text-gray-700 dark:text-gray-300 transition-all duration-300 ${
-                        isHovered ? 'opacity-0 absolute' : 'opacity-100'
-                      }`}
-                    >
-                      "{c.content}"
-                    </p>
-                    <p
-                      className={`mb-4 italic text-gray-700 dark:text-gray-300 transition-all duration-300 ${
-                        isHovered ? 'opacity-100' : 'opacity-0 absolute'
-                      }`}
-                    >
-                      "{c.contentLong}"
-                    </p>
-                  </div>
+                          <div className="flex items-center gap-1 mb-4">
+                            {[...Array(c.rate)].map((_, ri) => (
+                              <Star key={ri} className="w-5 h-5 fill-yellow-400 text-yellow-500 dark:text-yellow-400" />
+                            ))}
+                          </div>
 
-                  <div className="font-semibold text-gray-900 dark:text-gray-200 mt-auto">{c.name}</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">{c.company}</div>
+                          <div className="relative">
+                            <p
+                              className={`mb-4 italic text-gray-700 dark:text-gray-300 transition-all duration-300 ${
+                                isHovered ? 'opacity-0 absolute' : 'opacity-100'
+                              }`}
+                            >
+                              "{c.content}"
+                            </p>
+                            <p
+                              className={`mb-4 italic text-gray-700 dark:text-gray-300 transition-all duration-300 ${
+                                isHovered ? 'opacity-100' : 'opacity-0 absolute'
+                              }`}
+                            >
+                              "{c.contentLong}"
+                            </p>
+                          </div>
 
-                  <div className="mt-4 text-xs text-gray-400 dark:text-gray-500 text-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    Hover to read more
-                  </div>
+                          <div className="font-semibold text-gray-900 dark:text-gray-200 mt-auto">{c.name}</div>
+                          <div className="text-sm text-gray-600 dark:text-gray-400">{c.company}</div>
+
+                          <div className="mt-4 text-xs text-gray-400 dark:text-gray-500 text-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            Hover to read more
+                          </div>
+                        </div>
+                      );
+                    })}
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
 
           {totalPages > 1 && (
