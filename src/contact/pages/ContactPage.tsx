@@ -1,9 +1,9 @@
+import ContactElement from '@contact/components/ContactElement';
 import { contact } from '@frame/constants/contact';
 import SubLayout from '@frame/layouts/SubLayout';
-import { Linkedin, Mail, Phone, Send } from 'lucide-react';
+import { Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactPage() {
-  const darkMode = false;
 
   return (
     <SubLayout title="Get In Touch" contact={false}>
@@ -14,40 +14,35 @@ export default function ContactPage() {
         </p>
 
         <div className="space-y-4">
-          <a
+
+          <ContactElement
             href={`tel:${contact.phone}`}
-            className="flex items-center gap-4 p-6 rounded-xl transition-all hover:scale-105 bg-white hover:shadow-lg dark:bg-gray-700 dark:hover:bg-gray-600"
-          >
-            <Phone className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-            <div>
-              <div className="font-semibold text-gray-900 dark:text-gray-200">Phone</div>
-              <div className="text-gray-600 dark:text-gray-400">{contact.phoneNice}</div>
-            </div>
-          </a>
+            icon={Phone}
+            title="Phone"
+            text={contact.phoneNice}
+          />
 
-          <a
+          <ContactElement
             href={`mailto:${contact.email}`}
-            className="flex items-center gap-4 p-6 rounded-xl transition-all hover:scale-105 bg-white hover:shadow-lg dark:bg-gray-700 dark:hover:bg-gray-600"
-          >
-            <Mail className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-            <div>
-              <div className="font-semibold text-gray-900 dark:text-gray-200">Email</div>
-              <div className="text-gray-600 dark:text-gray-400">{contact.email}</div>
-            </div>
-          </a>
+            icon={Mail}
+            title="Email"
+            text={contact.email}
+          />
 
-          <a
+          <ContactElement
             href={contact.linkedIn}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 p-6 rounded-xl transition-all hover:scale-105 bg-white hover:shadow-lg dark:bg-gray-700 dark:hover:bg-gray-600"
-          >
-            <Linkedin className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-            <div>
-              <div className="font-semibold text-gray-900 dark:text-gray-200">LinkedIn</div>
-              <div className="text-gray-600 dark:text-gray-400">Connect with me professionally</div>
-            </div>
-          </a>
+            icon={Linkedin}
+            title="LinkedIn"
+            text="Connect with me professionally"
+            newWindow
+          />
+
+          <ContactElement
+            icon={MapPin}
+            title="Tax Location for B2B"
+            text="Poland / European Union"
+          />
+
         </div>
       </div>
 
