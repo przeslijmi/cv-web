@@ -1,7 +1,7 @@
 import ContactElement from '@contact/components/ContactElement';
 import { contact } from '@frame/constants/contact';
 import SubLayout from '@frame/layouts/SubLayout';
-import { Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { GitBranch, Globe, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactPage() {
 
@@ -34,6 +34,22 @@ export default function ContactPage() {
             icon={Linkedin}
             title="LinkedIn"
             text="Connect with me professionally"
+            newWindow
+          />
+
+          <ContactElement
+            href={contact.github}
+            icon={GitBranch}
+            title="GitHub"
+            text="Check out my code examples"
+            newWindow
+          />
+
+          <ContactElement
+            href={contact.npm}
+            icon={Globe}
+            title="npmjs.com"
+            text="See my public utilities/libraries available on NPM"
             newWindow
           />
 
