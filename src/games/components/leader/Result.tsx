@@ -14,11 +14,11 @@ export default function  Result({
         Your score:<br />
         {Number(result).toFixed(2)} <span className="text-xl text-gray-600">/ 60.00</span>
       </div>
-      {result >= 54 && (<div className="text-center text-3xl mt-10 p-5 text-gray-800">
+      {result >= 51 && (<div className="text-center text-3xl mt-10 p-5 text-gray-800">
         <p>Nice! You are a Leader.</p>
-        <p className="text-xl text-blue-700 font-medium"><Link to="/contact">I want to work together with You! --&gt;</Link></p>
+        <p className="text-xl text-blue-700 font-medium"><Link to="/contact">I want to work with You! --&gt;</Link></p>
       </div>)}
-      {result < 54 && result > 10 && (<div className="text-center text-3xl mt-10 p-5 text-gray-800">
+      {result < 51 && result > 10 && (<div className="text-center text-3xl mt-10 p-5 text-gray-800">
         <p>Not Great. Not Terrible.</p>
         <p className="text-xl text-blue-700 font-medium"><Link to="/contact">Let's talk! --&gt;</Link></p>
       </div>)}
