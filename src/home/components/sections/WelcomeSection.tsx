@@ -33,12 +33,12 @@ export default function WelcomeSection({}: Props) {
           <Counter
             title="Features Delivered"
             leadingColor="amber"
-            amount={1486}
+            amount={1489}
           />
           <Counter
             title="Merge Requests"
             leadingColor="cyan"
-            amount={5821}
+            amount={5827}
           />
           <Counter
             title="Dedication"
