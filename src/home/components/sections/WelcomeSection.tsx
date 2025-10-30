@@ -67,12 +67,11 @@ export default function WelcomeSection({}: Props) {
               leadingColor="amber"
             />
             <Explore
-              title="Games (SOON)"
+              title="Games"
               icon={Gamepad2}
               text="A playful look at my approach to development, business, and growth."
               location="/games"
               leadingColor="cyan"
-              disabled
             />
           </div>
         </div>

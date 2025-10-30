@@ -3,6 +3,7 @@ import AboutMePage from '@home/pages/AboutMePage'
 import HomePage from '@home/pages/HomePage'
 import OutcomePage from '@outcome/pages/OutcomePage'
 import TechStackPage from '@outcome/pages/TechStackPage'
+import GamesPage from '@games/pages/GamesPage'
 import { Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/about-me" element={<AboutMePage />} />
         <Route path="/outcome" element={<OutcomePage />} />
         <Route path="/tech-stack" element={<TechStackPage />} />
+        <Route path="/games" element={<GamesPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>

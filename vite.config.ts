@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       '@contact': path.resolve(__dirname, 'src/contact'),
       '@frame': path.resolve(__dirname, 'src/frame'),
+      '@games': path.resolve(__dirname, 'src/games'),
       '@home': path.resolve(__dirname, 'src/home'),
       '@outcome': path.resolve(__dirname, 'src/outcome'),
     },
