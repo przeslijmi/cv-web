@@ -20,7 +20,7 @@ export default function Person({
 
   return (
     <div className={(silenced ? 'cursor-not-allowed opacity-30' : 'cursor-pointer')}>
-      <div className="text-center text-gray-800 text-sm mb-1">{Number(10-anger).toFixed(2)} / 10</div>
+      <div className="text-center text-gray-700 text-sm mb-3">{Number(10-anger).toFixed(2)} / 10</div>
       <PersonSvg
         className={classNames(
           'shadow-xl rounded-full mx-auto',
