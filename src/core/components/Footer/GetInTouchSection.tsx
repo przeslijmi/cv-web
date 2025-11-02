@@ -1,4 +1,4 @@
-import { contact } from '@frame/constants/contact';
+import { contact } from '@core/constants/contact';
 import HomeSection from '@home/components/HomeSection';
 import { Linkedin, Mail, Phone } from 'lucide-react';
 

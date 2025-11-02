@@ -1,4 +1,4 @@
-import SubLayout from '@frame/layouts/SubLayout';
+import SubLayout from '@core/layouts/SubLayout';
 import { Brain, DatabaseZap, GitCommitVertical, Layers, Smartphone, TestTube } from 'lucide-react';
 import Tech from '@outcome/components/Tech';
 

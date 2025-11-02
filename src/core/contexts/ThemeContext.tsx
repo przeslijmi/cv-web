@@ -1,4 +1,4 @@
-import { setHtmlThemeTo } from '@frame/utils/html';
+import { setHtmlThemeTo } from '@core/utils/html';
 import { createContext, useEffect, useState } from 'react';
 
 type Theme = 'light' | 'dark';

@@ -1,7 +1,7 @@
 import { Phone, Mail, Linkedin, Moon, Sun } from 'lucide-react';
-import IconButton from '@frame/components/IconButtons/IconButton';
-import { contact } from '@frame/constants/contact';
-import { useTheme } from '@frame/hooks/useTheme';
+import IconButton from '@core/components/IconButtons/IconButton';
+import { contact } from '@core/constants/contact';
+import { useTheme } from '@core/hooks/useTheme';
 
 interface Props {}
 
@@ -19,7 +19,7 @@ export default function IconButtons({}: Props) {
         icon={Mail}
       />
       <IconButton
-        onClick={() => (window.location.href = contact.linkedIn)}
+        onClick={() => window.open(contact.linkedIn, '_blank')}
         icon={Linkedin}
       />
       <IconButton

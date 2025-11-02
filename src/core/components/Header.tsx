@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Logo from '@frame/components/Logo';
-import IconButtons from '@frame/components/IconButtons';
-import NavMobile from '@frame/components/nav/NavMobile';
-import Hamburger from '@frame/components/nav/Hamburger';
-import Nav from '@frame/components/nav/Nav';
+import Logo from '@core/components/Logo';
+import IconButtons from '@core/components/IconButtons';
+import NavMobile from '@core/components/nav/NavMobile';
+import Hamburger from '@core/components/nav/Hamburger';
+import Nav from '@core/components/nav/Nav';
 
 interface Props {}
 

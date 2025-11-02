@@ -1,6 +1,6 @@
-import IconedList from '@frame/components/IconedList';
-import Section from '@frame/components/Section';
-import SubLayout from '@frame/layouts/SubLayout';
+import IconedList from '@core/components/IconedList';
+import Section from '@core/components/Section';
+import SubLayout from '@core/layouts/SubLayout';
 import { Target, Zap } from 'lucide-react';
 
 export default function OutcomePage() {

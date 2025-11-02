@@ -1,5 +1,5 @@
 
-import Layout from '@frame/layouts/Layout';
+import Layout from '@core/layouts/Layout';
 
 interface Props {
   title: string;

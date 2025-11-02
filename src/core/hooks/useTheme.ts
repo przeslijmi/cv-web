@@ -1,5 +1,5 @@
-import { ThemeContext } from '@frame/contexts/ThemeContext';
-import { setHtmlThemeTo } from '@frame/utils/html';
+import { ThemeContext } from '@core/contexts/ThemeContext';
+import { setHtmlThemeTo } from '@core/utils/html';
 import { useContext, useCallback } from 'react';
 
 export function useTheme() {

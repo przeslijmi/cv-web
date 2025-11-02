@@ -1,6 +1,6 @@
 import ContactElement from '@contact/components/ContactElement';
-import { contact } from '@frame/constants/contact';
-import SubLayout from '@frame/layouts/SubLayout';
+import { contact } from '@core/constants/contact';
+import SubLayout from '@core/layouts/SubLayout';
 import { GitBranch, Globe, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactPage() {

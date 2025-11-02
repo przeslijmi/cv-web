@@ -1,16 +1,21 @@
 import { Code, Gamepad2, Target, ChevronDown, } from 'lucide-react';
 import Counter from '@home/components/sections/WelcomeSection/Counter';
 import Explore from '@home/components/sections/WelcomeSection/Explore';
-import { scrollToElement } from '@frame/utils/html';
+import { scrollToElement } from '@core/utils/html';
+import LogoSvg from '@core/components/Logo/LogoSvg';
 
 interface Props {}
 
 export default function WelcomeSection({}: Props) {
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-10 pb-40 bg-gray-50 dark:bg-gray-900">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 pb-40 pt-5 md:pt-0 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-5xl mx-auto space-y-12">
         <div className="space-y-6 animate-fade-in">
+          <h1 className="text-transparent flex justify-center align-middle">
+            <LogoSvg width={160} />
+            <div className="text-3xl md:text-5xl font-light pl-4 pt-7 md:pt-5 bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700">lets-create.click</div>
+          </h1>
           <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700">
             Karol Nowakowski
           </h1>

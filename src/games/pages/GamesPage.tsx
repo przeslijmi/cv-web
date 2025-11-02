@@ -1,5 +1,5 @@
-import Section from '@frame/components/Section';
-import SubLayout from '@frame/layouts/SubLayout';
+import Section from '@core/components/Section';
+import SubLayout from '@core/layouts/SubLayout';
 import LeaderGame from '@games/components/LeaderGame';
 
 export default function GamesPage() {

@@ -1,5 +1,5 @@
-import GetInTouchSection from '@frame/components/Footer/GetInTouchSection';
-import LowestFooter from '@frame/components/Footer/LowestFooter';
+import GetInTouchSection from '@core/components/Footer/GetInTouchSection';
+import LowestFooter from '@core/components/Footer/LowestFooter';
 
 interface Props {
   contact?: boolean;

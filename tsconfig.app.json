@@ -8,7 +8,7 @@
     "baseUrl": "./src",
     "paths": {
       "@contact/*": ["contact/*"],
-      "@frame/*": ["frame/*"],
+      "@core/*": ["core/*"],
       "@games/*": ["games/*"],
       "@home/*": ["home/*"],
       "@outcome/*": ["outcome/*"],

@@ -1,4 +1,4 @@
-import { menuItems } from '@frame/constants/menuItems';
+import { menuItems } from '@core/constants/menuItems';
 import { Link } from 'react-router-dom';
 
 interface Props {

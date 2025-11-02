@@ -6,7 +6,7 @@ import MobileAppsSection from '@home/components/sections/MobileAppsSection';
 import AiSection from '@home/components/sections/AiSection';
 import CommentsSection from '@home/components/sections/CommentsSection';
 import CooperateSection from '@home/components/sections/CooperateSection';
-import Layout from '@frame/layouts/Layout';
+import Layout from '@core/layouts/Layout';
 
 export default function HomePage() {
 

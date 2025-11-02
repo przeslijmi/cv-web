@@ -1,4 +1,4 @@
-import IconedList from '@frame/components/IconedList';
+import IconedList from '@core/components/IconedList';
 import HomeSection from '@home/components/HomeSection';
 import { Handshake, Target, Zap } from 'lucide-react';
 
