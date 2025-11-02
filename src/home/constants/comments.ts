@@ -45,7 +45,7 @@ export const comments = [
       'He is always willing to lend a helping hand to colleagues and share his knowledge generously.',
       'I have had the pleasure of working alongside Karol for the past four years, where he has consistently demonstrated exceptional professionalism and technical expertise. Karol is not only a highly skilled developer but also someone who approaches challenges with creativity, precision, and determination.',
       'His positive attitude, reliability, and ability to inspire those around him make him an invaluable asset in any professional environment.',
-      'On a personal level, Karol is a trusted colleague and a loyal friend. His integrity, kindness, and sense of humor make him a joy to work with, and I feel lucky to have had the opportunist to collaborate with him ❤️',
+      'On a personal level, Karol is a trusted colleague and a loyal friend. His integrity, kindness, and sense of humor make him a joy to work with, and I feel lucky to have had the opportunity to collaborate with him ❤️',
     ],
     name: 'Mette Maigaard',
     company: 'Product Specialist',
