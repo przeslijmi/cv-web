@@ -23,7 +23,7 @@ export default function WelcomeSection({}: Props) {
             Full Stack Developer &&nbsp;Problem&nbsp;Solver
           </p>
           <p className={`text-lg md:text-xl max-w-3xl mx-auto leading-relaxed dark:text-gray-400 text-gray-600`}>
-            Passionate about crafting elegant solutions with PHP, Laravel, Vue, and React.<br />
+            Passionate about crafting elegant solutions with React, Vue, Node.js, PHP and Laravel.<br />
             I want to build software that makes a difference.
           </p>
         </div>

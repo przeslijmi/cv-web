@@ -19,8 +19,8 @@ export default function OutcomePage() {
         <IconedList
           listClass="text-white/80"
           list={[
-            'Migrate legacy applications to modern frameworks (PHP, JS, Node.js, VUE, Angular, React, Laravel)',
-            'Refactor monolithic codebases into modular, testable components',
+            'Migrate legacy applications (PHP, JS, jQuery or any other custom solution) to modern, scalable frameworks',
+            'Refactor monolithic codebases into modular, scalable, testable components',
             'Improve performance, security, and maintainability',
             'Zero downtime deployments and seamless migrations',
           ]}
@@ -62,10 +62,11 @@ export default function OutcomePage() {
         <IconedList
           listClass="text-gray-700 dark:text-gray-300"
           list={[
-            'Full-stack web applications with Laravel and Vue/React',
+            'Full-stack web applications with React or VUE on frontend and node.js or Laravel (PHP) on backend',
             'Mobile apps with React Native',
             'RESTful APIs and GraphQL backends',
             'Real-time features with WebSockets',
+            'Integrations with Stripe (payment services)',
           ]}
         />
       </Section>

@@ -63,10 +63,10 @@ export default function AboutMePage() {
         titleClass="text-orange-900 dark:text-orange-400"
       >
         <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-          I'm a full-stack developer who loves building things that matter. My journey in tech started over 20 years ago, and I've worked on everything from small startups to enterprise applications. I specialize in PHP, Laravel, Vue, React, and React Native, but I'm always exploring new technologies.
+          I'm a full-stack developer who loves building things that matter. My journey in tech started over 20 years ago, and I've worked on everything from small startups to enterprise applications. I specialize in React, React Native, VUE, node.js and PHP, but I'm always exploring new technologies.
         </p>
         <p className="text-lg leading-relaxed mt-4 text-gray-700 dark:text-gray-300">
-          When I'm not coding, you'll find me mentoring junior developers, writing technical documentation, or thinking about how to improve user experiences. I believe that a developer’s true purpose lies in delivering value and enhancing customer satisfaction, rather than simply writing code for the sake of coding.
+          When I'm not coding, you'll find me mentoring junior developers, writing technical documentation, or thinking about how to improve user experiences. I believe that a developer's true purpose lies in delivering value and enhancing customer satisfaction, rather than simply writing code for the sake of coding.
         </p>
       </Section>
 
