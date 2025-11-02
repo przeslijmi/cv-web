@@ -13,18 +13,18 @@ export default function WelcomeSection({}: Props) {
       <div className="max-w-5xl mx-auto space-y-12">
         <div className="space-y-6 animate-fade-in">
           <h1 className="text-transparent flex justify-center align-middle">
-            <LogoSvg width={160} />
+            <div className="hidden md:block"><LogoSvg width={160} /></div>
             <div className="text-3xl md:text-5xl font-light pl-4 pt-7 md:pt-5 bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700">lets-create.click</div>
           </h1>
-          <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700">
+          <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700">
             Karol Nowakowski
           </h1>
           <p className={`text-2xl md:text-3xl font-light dark:text-gray-300 text-gray-700`}>
             Full Stack Developer &&nbsp;Problem&nbsp;Solver
           </p>
-          <p className={`text-xl max-w-3xl mx-auto leading-relaxed dark:text-gray-400 text-gray-600`}>
-            Passionate about crafting elegant solutions with PHP, Laravel, Vue, and React.<br />
-            I want to build software that makes a difference.
+          <p className={`text-lg md:text-xl max-w-3xl mx-auto leading-relaxed dark:text-gray-400 text-gray-600`}>
+            Passionate about crafting elegant solutions with PHP, Laravel, Vue, and React.<br />
+            I want to build software that makes a difference.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function WelcomeSection({}: Props) {
           <Counter
             title="Merge Requests"
             leadingColor="cyan"
-            amount={5827}
+            amount={5831}
           />
           <Counter
             title="Dedication"

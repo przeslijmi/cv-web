@@ -13,10 +13,7 @@ export default function Hamburger({
   return (
     <button
       onClick={() => onClick()}
-      className={`
-        p-2 rounded-lg text-white hover:scale-110 transition-colors ml-2
-        ${isOpen ? 'bg-cyan-600' : 'bg-blue-600'}
-      `}
+      className="p-2 rounded-lg text-white hover:scale-110 transition-colors ml-2 bg-sky-600"
     >
       {isOpen ? <X size={24} /> : <Menu size={24} />}
     </button>

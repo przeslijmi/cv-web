@@ -38,8 +38,10 @@ export default function Tech({
 
   return (
     <div className={`p-6 rounded-2xl ${colorScheme[type].boxClass}`}>
-      <Icon className={`w-12 h-12 mb-4 ${colorScheme[type].iconClass}`} />
-      <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">{name}</h2>
+      <div className="flex mb-4 space-x-4">
+        <Icon className={`w-12 h-12 ${colorScheme[type].iconClass}`} />
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 self-center">{name}</h2>
+      </div>
       <p className="text-gray-700 dark:text-gray-300">{children}</p>
     </div>
   );

@@ -17,7 +17,8 @@ export default function Logo({
         ${big ? 'text-3xl' : 'text-xl'}
       `}
     >
-      <LogoSvg width={100} />
+      <div className="hidden md:block"><LogoSvg width={100} /></div>
+      <div className="md:hidden"><LogoSvg width={60} /></div>
       <div className="pl-3 self-center">Karol Nowakowski</div>
 
     </button>
